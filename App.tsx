@@ -4,6 +4,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import Routes from "./src/routes";
 import COLORS from "./src/styles/colors";
 
+if (__DEV__) {
+  import("./ReactotronConfig");
+}
+
 const App = () => (
   <NavigationContainer>
     <View style={{ flex: 1 }}>
