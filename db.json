@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "1",  
+      "id": 1,
       "email": "admin@admin.com",
       "password": "$2a$10$S0/nCCX96eNwVWEwXnsClei1aJm/GOxRbXa1aDhTFQbyBZdWKeNEu",
       "nickname": "RhuanM.R",
@@ -261,8 +261,13 @@
         }
       ],
       "assigned_memories": [],
-      "bio": "non non velit. Curabitur erat neque, dignissim eget aliquet vitae, aliquet id orci. Morbi vel porttitor nulla, vel molestie sapien. Cras luctus lacinia augue, consectetur blandit ligula interdum vel.",
-      "id": 1
+      "bio": "non non velit. Curabitur erat neque, dignissim eget aliquet vitae, aliquet id orci. Morbi vel porttitor nulla, vel molestie sapien. Cras luctus lacinia augue, consectetur blandit ligula interdum vel."
+    },
+    {
+      "email": "rhuan@rhuan.com",
+      "password": "$2a$10$.6VQNCjgt2/5Y0/k66pOru7VHBydKWNGilelACshHo5QxLXkY/Hje",
+      "nickname": "RhuanM1",
+      "id": 2
     }
   ]
 }

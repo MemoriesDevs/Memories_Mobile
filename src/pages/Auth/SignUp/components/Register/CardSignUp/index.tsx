@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text } from "react-native";
 import AuthActionButton from "../../../../../../components/AuthActionButton";
 import TextField from "../../../../../../components/TextField";
+import { AuthContext } from "../../../../../../contexts/auth";
+import { AuthContextType } from "../../../../../../types/authContext";
 import SignUpFormHook from "./hooks";
 import styles from "./styles";
 
 const CardSignUp = () => {
+  const { signUp } = useContext(AuthContext) as AuthContextType;
   const {
     email,
     setEmail,
@@ -13,12 +16,10 @@ const CardSignUp = () => {
     setPassword,
     confirmedPassword,
     setConfirmedPassword,
-    name,
-    setName,
     nick,
     setNick,
     handleSignUp,
-  } = SignUpFormHook();
+  } = SignUpFormHook({ signUp });
 
   return (
     <View style={styles.container}>
@@ -29,12 +30,6 @@ const CardSignUp = () => {
           value={email}
           secureTextEntry={false}
           onChangeText={(element) => setEmail(element)}
-        />
-        <TextField
-          placeholder="Name"
-          value={name}
-          secureTextEntry={false}
-          onChangeText={(element) => setName(element)}
         />
         <TextField
           placeholder="Password"

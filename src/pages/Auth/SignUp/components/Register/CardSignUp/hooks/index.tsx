@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Alert } from "react-native";
 
-const SignUpFormHook = () => {
+interface SignUpFormHookProps {
+  signUp: (email: string, password: string, nickName: string) => void;
+}
+
+const SignUpFormHook = ({ signUp }: SignUpFormHookProps) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmedPassword, setConfirmedPassword] = useState("");
-  const [name, setName] = useState("");
   const [nick, setNick] = useState("");
 
   const handleSignUp = () => {
     if (password === confirmedPassword) {
       setPassword(password);
-      console.tron.log(email, password, name, nick);
+      signUp(email, password, nick);
     } else {
       Alert.alert("The passwords doesn`t match");
     }
@@ -24,8 +27,6 @@ const SignUpFormHook = () => {
     setPassword,
     confirmedPassword,
     setConfirmedPassword,
-    name,
-    setName,
     nick,
     setNick,
     handleSignUp,
