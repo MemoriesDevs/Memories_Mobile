@@ -1,9 +1,11 @@
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import React from "react";
+import React, { useContext } from "react";
 import { View, Image } from "react-native";
 import AuthActionButton from "../../../../../../../components/AuthActionButton";
 import TextField from "../../../../../../../components/TextField";
+import { AuthContext } from "../../../../../../../contexts/auth";
+import { AuthContextType } from "../../../../../../../types/authContext";
 import SignInCardHooks from "./hooks";
 import styles from "./styles";
 
@@ -14,8 +16,9 @@ export type RootStackParamList = {
 };
 
 const Card = () => {
+  const { signIn } = useContext(AuthContext) as AuthContextType;
   const { email, setEmail, password, setPassword, handleSignIn } =
-    SignInCardHooks();
+    SignInCardHooks({ signIn });
 
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 

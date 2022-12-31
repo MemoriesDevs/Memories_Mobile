@@ -1,0 +1,268 @@
+{
+  "users": [
+    {
+      "id": "1",  
+      "email": "admin@admin.com",
+      "password": "$2a$10$S0/nCCX96eNwVWEwXnsClei1aJm/GOxRbXa1aDhTFQbyBZdWKeNEu",
+      "nickname": "RhuanM.R",
+      "memories": [
+        {
+          "id": 1,
+          "date": "26/11/21",
+          "title": "A day to remember",
+          "type": "public",
+          "component": [
+            {
+              "id": 1,
+              "type": "image",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/images/WhatsApp_Image_2022-08-02_at_13.39.54.jpeg"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "type": "text",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/texts/first.txt"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "type": "image",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/images/WhatsApp_Image_2022-08-02_at_13.40.02.jpeg"
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "type": "text",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/texts/second.txt"
+                }
+              ]
+            }
+          ],
+          "friends": [
+            {
+              "id": 2,
+              "nickname": "Glauquito"
+            }
+          ],
+          "tags": [
+            {
+              "id": 1,
+              "name": "Party",
+              "color": "#F4EE61"
+            },
+            {
+              "id": 2,
+              "name": "Friends",
+              "color": "#FC5F5F"
+            },
+            {
+              "id": 3,
+              "name": "Fun",
+              "color": "#7796E7"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "date": "26/11/21",
+          "title": "A  day with my friends",
+          "type": "public",
+          "component": [
+            {
+              "id": 1,
+              "type": "text",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/texts/third.txt"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "type": "image",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "assets/images/11951406_1708917109337227_3649624071352741641_n.jpg"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "type": "text",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/texts/fourth.txt"
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "type": "image",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/images/51313232_1867416243367919_2444995637456928768_n.jpg"
+                },
+                {
+                  "id": 2,
+                  "pathFile": "/assets/images/13962633_1073191979439265_406156801080793658_n.jpg"
+                }
+              ]
+            }
+          ],
+          "friends": [
+            {
+              "id": 2,
+              "nickname": "Glauquito"
+            }
+          ],
+          "tags": [
+            {
+              "id": 4,
+              "name": "Amazing",
+              "color": "#E961F4"
+            },
+            {
+              "id": 2,
+              "name": "Friends",
+              "color": "#FC5F5F"
+            },
+            {
+              "id": 3,
+              "name": "Fun",
+              "color": "#7796E7"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "date": "26/11/21",
+          "title": "Legendary Night",
+          "type": "private",
+          "component": [
+            {
+              "id": 1,
+              "type": "text",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/texts/Fifth.txt"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "type": "image",
+              "path": [
+                {
+                  "id": 1,
+                  "pathFile": "/assets/images/download(2).jpeg"
+                }
+              ]
+            }
+          ],
+          "friends": [
+            {
+              "id": 2,
+              "nickname": "Glauquito"
+            }
+          ],
+          "tags": [
+            {
+              "id": 1,
+              "name": "Party",
+              "color": "#F4EE61"
+            },
+            {
+              "id": 2,
+              "name": "Friends",
+              "color": "#FC5F5F"
+            },
+            {
+              "id": 3,
+              "name": "Fun",
+              "color": "#7796E7"
+            }
+          ]
+        }
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Party",
+          "color": "#F4EE61",
+          "memories": [
+            {
+              "id": 1,
+              "title": "A day to remember",
+              "date": "26/11/21"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Friends",
+          "color": "#FC5F5F",
+          "memories": [
+            {
+              "id": 1,
+              "title": "A day to remember",
+              "date": "26/11/21"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Fun",
+          "color": "#7796E7",
+          "memories": [
+            {
+              "id": 1,
+              "title": "A day to remember",
+              "date": "26/11/21"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Amazing",
+          "color": "#E961F4",
+          "memories": [
+            {
+              "id": 2,
+              "title": "A  day with my friends",
+              "date": "26/11/21"
+            }
+          ]
+        }
+      ],
+      "friends": [
+        {
+          "id": 2,
+          "nickname": "Glauquito"
+        }
+      ],
+      "assigned_memories": [],
+      "bio": "non non velit. Curabitur erat neque, dignissim eget aliquet vitae, aliquet id orci. Morbi vel porttitor nulla, vel molestie sapien. Cras luctus lacinia augue, consectetur blandit ligula interdum vel.",
+      "id": 1
+    }
+  ]
+}

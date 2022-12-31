@@ -1,11 +1,15 @@
 import { useState } from "react";
 
-const SignInCardHooks = () => {
+interface SignInHooksProps {
+  signIn: (email: string, password: string) => void;
+}
+
+const SignInCardHooks = ({ signIn }: SignInHooksProps) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSignIn = () => {
-    console.log("signIn");
+    signIn(email, password);
   };
 
   return {

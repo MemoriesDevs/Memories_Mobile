@@ -3,7 +3,7 @@ import COLORS from "../../../../styles/colors";
 
 const styles = StyleSheet.create({
   container: {
-    height: "87%",
+    height: "85%",
     width: "100%",
     backgroundColor: COLORS.PRIMARY,
     borderTopLeftRadius: 40,

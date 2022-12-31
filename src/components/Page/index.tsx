@@ -4,12 +4,12 @@ import Header from "../Header";
 import CardPage from "./components/AppCardComponent";
 import styles from "./styles";
 
-const image = require("../../../assets/App.jpg");
+const image = require("../../assets/App.jpg");
 
 interface PageProps {
   children: JSX.Element;
-  backButton: boolean;
-  onPress: () => void;
+  backButton?: boolean | undefined;
+  onPress?: () => void | undefined;
 }
 
 const PageComponent = ({ children, backButton, onPress }: PageProps) => {

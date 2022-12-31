@@ -6,8 +6,8 @@ const logo = require("../../assets/Logo.png");
 const chevronLeft = require("../../assets/icons/chevron-left.png");
 
 interface HeaderProps {
-  backButton: boolean;
-  onPress: () => void;
+  backButton?: boolean | undefined;
+  onPress?: () => void | undefined;
 }
 
 const Header = ({ backButton, onPress }: HeaderProps) => (

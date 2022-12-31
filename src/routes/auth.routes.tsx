@@ -13,7 +13,7 @@ type RootStackParamList = {
   SignUp: undefined;
 };
 
-type AppStackRoutesType = RouteConfig<
+type authStackRoutesType = RouteConfig<
   RootStackParamList,
   keyof RootStackParamList,
   StackNavigationState<RootStackParamList>,
@@ -21,7 +21,7 @@ type AppStackRoutesType = RouteConfig<
   StackNavigationEventMap
 >;
 
-const appStackRoutes: Array<AppStackRoutesType> = [
+const authStackRoutes: Array<authStackRoutesType> = [
   {
     name: "SignIn",
     component: SignIn,
@@ -36,7 +36,7 @@ const AuthStack = createStackNavigator<RootStackParamList>();
 
 const AuthRoutes = () => (
   <AuthStack.Navigator>
-    {appStackRoutes.map((stackRoute) => (
+    {authStackRoutes.map((stackRoute) => (
       <AuthStack.Screen
         key={stackRoute.name}
         {...stackRoute}
