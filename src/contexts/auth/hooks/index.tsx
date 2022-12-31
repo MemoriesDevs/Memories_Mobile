@@ -1,18 +1,14 @@
 import { useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Users } from "../../../types/users";
-import reactotron from "reactotron-react-native";
 import authService from "../../../services/auth";
 
 const AuthContextHooks = () => {
   const [user, setUser] = useState<Users | undefined>();
-  const signUp = async (
-    email: string,
-    password: string,
-    passwordConfirmation: string,
-    nickName: string
-  ) => {
-    reactotron.log!(email, password, passwordConfirmation, nickName);
+  const signUp = async (email: string, password: string, nickName: string) => {
+    const userData = await authService.register(nickName, email, password);
+    setUser(userData);
+    storageUser(user);
   };
 
   const signIn = async (email: string, password: string) => {
