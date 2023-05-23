@@ -3,7 +3,7 @@ import COLORS from '../../../../styles/colors';
 
 const styles = StyleSheet.create({
   headerContainer: {
-    height: 100,
+    height: 90,
     width: '100%',
     backgroundColor: COLORS.SECONDARY,
     alignItems: 'center',

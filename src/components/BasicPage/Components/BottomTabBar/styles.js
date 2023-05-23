@@ -3,7 +3,7 @@ import COLORS from '../../../../styles/colors';
 
 const styles = StyleSheet.create({
   tabContainer: {
-    height: 100,
+    height: 90,
     backgroundColor: COLORS.SECONDARY,
     paddingBottom: 30,
     flexDirection: 'row',

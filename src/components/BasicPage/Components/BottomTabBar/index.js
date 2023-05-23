@@ -12,13 +12,13 @@ import searchIcon from '../../../../assets/Icons/Search.png';
 export default function BottomTabBar({ navigation }) {
   return (
     <View style={styles.tabContainer}>
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Search')}>
         <Image source={searchIcon} />
       </TouchableWithoutFeedback>
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Home')}>
         <Image source={homeIcon} />
       </TouchableWithoutFeedback>
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Profile')}>
         <Image source={profileIcon} />
       </TouchableWithoutFeedback>
     </View>
