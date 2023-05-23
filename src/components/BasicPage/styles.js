@@ -4,7 +4,7 @@ import COLORS from '../../styles/colors';
 const styles = StyleSheet.create({
   ContainerPage: {
     flex: 1,
-    backgroundColor: COLORS.BLUE,
+    backgroundColor: COLORS.SECONDARY,
   },
   ContainerChild: {
     flex: 1,

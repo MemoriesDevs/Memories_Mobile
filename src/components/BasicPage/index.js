@@ -12,7 +12,7 @@ import HomeImage from './assets/HomeImage.jpeg';
 export default function BasicPage({ navigation }) {
   return (
     <View style={styles.ContainerPage}>
-      <StatusBar backgroundColor={COLORS.STATUS_BAR} barStyle="light-content" />
+      <StatusBar backgroundColor={COLORS.STATUS_BAR} barStyle="dark-content" />
       <View style={styles.contentPage}>
         <Header />
         <ImageBackground style={styles.ContainerChild} resizeMode="cover" source={HomeImage} />
