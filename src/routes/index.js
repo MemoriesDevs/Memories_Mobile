@@ -5,7 +5,8 @@ import AppNavigator from './app.routes';
 import AuthNavigator from './auth.routes';
 
 function AppRoute() {
-  const { userInfo } = useSelector((state) => state.auth);
+  // const { userInfo } = useSelector((state) => state.auth);
+  const userInfo = true;
 
   return (
     <NavigationContainer>
