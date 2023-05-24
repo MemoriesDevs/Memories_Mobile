@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.SECONDARY,
   },
   pageTitle: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 500,
     color: COLORS.SECONDARY,
     shadowColor: '#000',
@@ -21,11 +21,6 @@ const styles = StyleSheet.create({
   ContainerChild: {
     flex: 1,
     padding: '5%',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 12,
-    },
   },
   contentPage: {
     flex: 1,
