@@ -39,7 +39,9 @@ export default function Home() {
       <FlatList
         data={Data}
         showsVerticalScrollIndicator={false}
-        renderItem={({ item }) => (<MemorieCard date={item.date} title={item.title} />)}
+        renderItem={({ item }) => (
+          <MemorieCard navigation={navigation} date={item.date} title={item.title} />
+        )}
         keyExtractor={(item) => item.id}
         style={styles.ListContainer}
       />

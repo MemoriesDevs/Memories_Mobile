@@ -9,7 +9,7 @@ import Icon from './assets/ProfileIcon.png';
 export default function MemorieCard({ navigation, date, title }) {
   return (
     <View style={styles.CardContainer}>
-      <TouchableWithoutFeedback style={styles.ButtonCard}>
+      <TouchableWithoutFeedback style={styles.ButtonCard} onPress={() => navigation.navigate('Memories', { date, title })}>
         <View style={styles.CardContent}>
           <View style={styles.TopContainer}>
             <View style={styles.LeftContent}>
