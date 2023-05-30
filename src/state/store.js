@@ -2,7 +2,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query/react';
 
 import { apiUser } from '../services/servicesUser';
-import { apiMemories } from '../services/servicesMemories';
 
 export const setupStore = (preloadedState) => configureStore({
   reducer: {

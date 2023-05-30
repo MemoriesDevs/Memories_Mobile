@@ -5,13 +5,17 @@ import {
 import React from 'react';
 import styles from './styles';
 import Icon from './assets/ProfileIcon.png';
+import CardHooks from './hooks';
 
 export default function MemorieCard({
   navigation, id, date, title,
 }) {
+  const {
+    handlePressMemorie,
+  } = CardHooks({ date, title, navigation });
   return (
     <View style={styles.CardContainer}>
-      <TouchableWithoutFeedback style={styles.ButtonCard} onPress={() => navigation.navigate('Memories', { date, title, id })}>
+      <TouchableWithoutFeedback style={styles.ButtonCard} onPress={() => handlePressMemorie(id)}>
         <View style={styles.CardContent}>
           <View style={styles.TopContainer}>
             <View style={styles.LeftContent}>

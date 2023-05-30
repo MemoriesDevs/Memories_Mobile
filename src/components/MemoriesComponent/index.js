@@ -7,14 +7,14 @@ import MemoriesHeader from './components/MemoriesHeader';
 import ProfileIcon from './assets/ProfileIcon.png';
 import styles from './styles';
 
-export default function MemoriesComponent({ date, title }) {
+export default function MemoriesComponent({ date, title, data }) {
   return (
     <View style={styles.memorieContainer}>
       <TouchableOpacity style={styles.closeButton}>
         <Text style={styles.closeSymbol}>X</Text>
       </TouchableOpacity>
       <FlatList
-        ListHeaderComponent={<MemoriesHeader date={date} title={title} />}
+        ListHeaderComponent={<MemoriesHeader date={date} title={data.title} />}
       />
       <View>
         <View style={styles.containerIcon}>

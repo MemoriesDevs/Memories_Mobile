@@ -1,16 +1,16 @@
-import { createApi } from '@reduxjs/toolkit/query/react';
-import axiosBaseQuery from './axiosBaseQuery';
+/* eslint-disable import/prefer-default-export */
+import axios from 'axios';
+import { API_BASE_URL } from './axios';
 
-export const apiMemories = createApi({
-  reducerPath: 'api',
-  baseQuery: axiosBaseQuery({
-    transformResponse: (response) => response,
-  }),
-  endpoints: (builder) => ({
-    getMemorie: builder.query({
-      query: (id) => `/memories/${id}`,
-    }),
-  }),
-});
+export const getMemorie = async (id) => {
+  const url = `${API_BASE_URL}/memories/${id}`;
 
-export const { useGetMemorieQuery, endpoints } = apiMemories;
+  const options = {
+    method: 'GET',
+    url,
+  };
+
+  const result = await axios(options);
+
+  return result.data;
+};
