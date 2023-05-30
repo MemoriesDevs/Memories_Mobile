@@ -6,6 +6,7 @@ import React from 'react';
 import MemoriesHeader from './components/MemoriesHeader';
 import ProfileIcon from './assets/ProfileIcon.png';
 import styles from './styles';
+import MemoriesContent from './components/MemoriesContent';
 
 export default function MemoriesComponent({ date, title, data }) {
   return (
@@ -14,7 +15,13 @@ export default function MemoriesComponent({ date, title, data }) {
         <Text style={styles.closeSymbol}>X</Text>
       </TouchableOpacity>
       <FlatList
-        ListHeaderComponent={<MemoriesHeader date={date} title={data.title} />}
+        data={data.itens}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => (
+          <MemoriesContent item={item} />
+        )}
+        keyExtractor={(item) => item.id}
+        ListHeaderComponent={<MemoriesHeader date={date} title={title} />}
       />
       <View>
         <View style={styles.containerIcon}>

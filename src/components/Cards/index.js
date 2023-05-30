@@ -4,8 +4,8 @@ import {
 } from 'react-native';
 import React from 'react';
 import styles from './styles';
-import Icon from './assets/ProfileIcon.png';
 import CardHooks from './hooks';
+import BasicProfileIcon from '../BasicProfileIcon';
 
 export default function MemorieCard({
   navigation, id, date, title,
@@ -23,9 +23,7 @@ export default function MemorieCard({
               <Text style={styles.TitleCard}>{title}</Text>
             </View>
             <View style={styles.RigthContent}>
-              <View style={styles.ProfileBG}>
-                <Image source={Icon} />
-              </View>
+              <BasicProfileIcon />
             </View>
           </View>
           <View style={styles.BottomContainer} />
