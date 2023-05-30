@@ -4,19 +4,64 @@
             "id": 1,
             "name": "Rhuan",
             "nickname": "RhuanM1",
-            "memories": [1,2,3]
+            "memories": [
+                {
+                    "id": 1,
+                    "date": "23/05/2023",
+                    "title": "A day to remember",
+                    "type": "public"
+                },
+                {
+                    "id": 2,
+                    "date": "23/05/2023",
+                    "title": "A  day with my friends",
+                    "type": "public"
+                },
+                {
+                    "id": 3,
+                    "date": "23/05/2023",
+                    "title": "Legendary night",
+                    "type": "anonymous"
+                }
+            ]
         },
         {
             "id": 2,
             "name": "Admin",
             "nickname": "ADM1",
-            "memories": [1,2]
+            "memories": [
+                {
+                    "id": 2,
+                    "date": "23/05/2023",
+                    "title": "A  day with my friends",
+                    "type": "public"
+                },
+                {
+                    "id": 3,
+                    "date": "23/05/2023",
+                    "title": "Legendary night",
+                    "type": "anonymous"
+                }
+            ]
         },
         {
             "id": 3,
             "name": "Marques",
             "nickname": "OMarques",
-            "memories": [2,3]
+            "memories": [
+                {
+                    "id": 1,
+                    "date": "23/05/2023",
+                    "title": "A day to remember",
+                    "type": "public"
+                },
+                {
+                    "id": 3,
+                    "date": "23/05/2023",
+                    "title": "Legendary night",
+                    "type": "anonymous"
+                }
+            ]
         }
     ],
     "memories": [

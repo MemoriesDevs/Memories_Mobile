@@ -6,10 +6,12 @@ import React from 'react';
 import styles from './styles';
 import Icon from './assets/ProfileIcon.png';
 
-export default function MemorieCard({ navigation, date, title }) {
+export default function MemorieCard({
+  navigation, id, date, title,
+}) {
   return (
     <View style={styles.CardContainer}>
-      <TouchableWithoutFeedback style={styles.ButtonCard} onPress={() => navigation.navigate('Memories', { date, title })}>
+      <TouchableWithoutFeedback style={styles.ButtonCard} onPress={() => navigation.navigate('Memories', { date, title, id })}>
         <View style={styles.CardContent}>
           <View style={styles.TopContainer}>
             <View style={styles.LeftContent}>

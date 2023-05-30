@@ -1,16 +1,16 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
 import axiosBaseQuery from './axiosBaseQuery';
 
-export const api = createApi({
+export const apiUser = createApi({
   reducerPath: 'api',
   baseQuery: axiosBaseQuery({
     transformResponse: (response) => response,
   }),
   endpoints: (builder) => ({
-    getJoke: builder.query({
-      query: () => '/jokes/random',
+    getUser: builder.query({
+      query: () => '/users/1',
     }),
   }),
 });
 
-export const { useGetJokeQuery, endpoints } = api;
+export const { useGetUserQuery, endpoints } = apiUser;
