@@ -48,14 +48,6 @@ const styles = StyleSheet.create({
     width: '70%',
     height: '100%',
   },
-  ProfileBG: {
-    backgroundColor: '#E9E5E5',
-    width: 40,
-    height: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 20,
-  },
 });
 
 export default styles;

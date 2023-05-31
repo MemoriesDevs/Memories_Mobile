@@ -4,12 +4,18 @@ import {
 } from 'react-native';
 import React from 'react';
 import styles from './styles';
-import Icon from './assets/ProfileIcon.png';
+import CardHooks from './hooks';
+import BasicProfileIcon from '../BasicProfileIcon';
 
-export default function MemorieCard({ navigation, date, title }) {
+export default function MemorieCard({
+  navigation, id, date, title,
+}) {
+  const {
+    handlePressMemorie,
+  } = CardHooks({ date, title, navigation });
   return (
     <View style={styles.CardContainer}>
-      <TouchableWithoutFeedback style={styles.ButtonCard}>
+      <TouchableWithoutFeedback style={styles.ButtonCard} onPress={() => handlePressMemorie(id)}>
         <View style={styles.CardContent}>
           <View style={styles.TopContainer}>
             <View style={styles.LeftContent}>
@@ -17,9 +23,7 @@ export default function MemorieCard({ navigation, date, title }) {
               <Text style={styles.TitleCard}>{title}</Text>
             </View>
             <View style={styles.RigthContent}>
-              <View style={styles.ProfileBG}>
-                <Image source={Icon} />
-              </View>
+              <BasicProfileIcon />
             </View>
           </View>
           <View style={styles.BottomContainer} />
