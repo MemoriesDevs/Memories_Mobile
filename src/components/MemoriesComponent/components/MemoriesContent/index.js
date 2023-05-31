@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { View, Text, Image } from 'react-native';
+import Carousel from 'react-native-reanimated-carousel';
 import { API_BASE_URL } from '../../../../services/axios';
 import styles from './styles';
 
@@ -16,7 +17,21 @@ export default function MemoriesContent({ item }) {
     case 'carousel':
       return (
         <View style={styles.Container}>
-          <Image source={{ uri: url }} />
+          <Carousel
+            width={275}
+            height={200}
+            data={item.content}
+            scrollAnimationDuration={1000}
+            renderItem={({ index }) => (
+              <View
+                style={{
+                  justifyContent: 'center',
+                }}
+              >
+                <Image style={styles.imageContent} source={{ uri: `${API_BASE_URL}${item.content[index]}` }} />
+              </View>
+            )}
+          />
         </View>
       );
     default:
