@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   Container: {
     display: 'flex',
     marginTop: '10%',
+    paddingHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -11,7 +12,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   imageContent: {
-    width: 275,
+    width: 250,
     height: 200,
     shadowColor: '#000',
     shadowOffset: {
