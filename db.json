@@ -6,6 +6,20 @@
             "nickname": "RhuanM1",
             "photo": "/images/ProfileImage.jpg",
             "bio": "non non velit. Curabitur erat neque, dignissim eget aliquet vitae, aliquet id orci. Morbi vel porttitor nulla, vel molestie sapien. Cras luctus lacinia augue, consectetur blandit ligula interdum vel.",
+            "friends": [
+                {
+                    "id": 2,
+                    "name": "Admin",
+                    "nickname": "ADM1",
+                    "photo": "/images/ProfileImage2.jpg" 
+                },
+                {
+                    "id": 3,
+                    "name": "Marques",
+                    "nickname": "OMarques",
+                    "photo": "/images/ProfileImage3.jpg"
+                }
+            ],
             "memories": [
                 {
                     "id": 1,
@@ -31,6 +45,22 @@
             "id": 2,
             "name": "Admin",
             "nickname": "ADM1",
+            "photo": "/images/ProfileImage2.jpg",
+            "bio": "non non velit. Curabitur erat neque, dignissim eget aliquet vitae, aliquet id orci. Morbi vel porttitor nulla, vel molestie sapien. Cras luctus lacinia augue, consectetur blandit ligula interdum vel.",
+            "friends": [
+                {
+                    "id": 1,
+                    "name": "Rhuan",
+                    "nickname": "RhuanM1",
+                    "photo": "/images/ProfileImage.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Marques",
+                    "nickname": "OMarques",
+                    "photo": "/images/ProfileImage3.jpg"
+                }
+            ],
             "memories": [
                 {
                     "id": 2,
@@ -50,6 +80,22 @@
             "id": 3,
             "name": "Marques",
             "nickname": "OMarques",
+            "photo": "/images/ProfileImage3.jpg",
+            "bio": "non non velit. Curabitur erat neque, dignissim eget aliquet vitae, aliquet id orci. Morbi vel porttitor nulla, vel molestie sapien. Cras luctus lacinia augue, consectetur blandit ligula interdum vel.",
+            "friends": [
+                {
+                    "id": 1,
+                    "name": "Rhuan",
+                    "nickname": "RhuanM1",
+                    "photo": "/images/ProfileImage.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Admin",
+                    "nickname": "ADM1",
+                    "photo": "/images/ProfileImage2.jpg" 
+                }
+            ],
             "memories": [
                 {
                     "id": 1,

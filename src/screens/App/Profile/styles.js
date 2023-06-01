@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: '5%',
     justifyContent: 'space-between',
     paddingTop: '5%',
-    flexDirection: 'row',
     width: '100%',
     shadowColor: '#000',
     shadowOffset: {

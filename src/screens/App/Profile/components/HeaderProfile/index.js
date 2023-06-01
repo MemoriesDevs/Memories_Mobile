@@ -15,7 +15,7 @@ export default function HeaderProfile({ data }) {
         <Image style={styles.profileImage} source={{ uri: url }} />
         <View style={styles.containerData}>
           <View style={styles.contentHeader}>
-            <Text style={styles.profileName}>RhuanM.R</Text>
+            <Text style={styles.profileName}>{data.nickname}</Text>
             <TouchableOpacity>
               <Image source={Icon} />
             </TouchableOpacity>
@@ -26,7 +26,7 @@ export default function HeaderProfile({ data }) {
                 Memories
               </Text>
               <Text style={styles.number}>
-                30
+                {data.memories.length}
               </Text>
             </View>
             <View style={styles.contentNumbers}>
@@ -34,7 +34,7 @@ export default function HeaderProfile({ data }) {
                 Friends
               </Text>
               <Text style={styles.number}>
-                50
+                {data.friends.length}
               </Text>
             </View>
             <View style={styles.contentNumbers}>
