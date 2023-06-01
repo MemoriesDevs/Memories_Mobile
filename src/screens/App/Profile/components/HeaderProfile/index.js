@@ -5,50 +5,51 @@ import {
 } from 'react-native';
 import { API_BASE_URL } from '../../../../../services/axios';
 import Icon from '../../assets/GearIcon.png';
+import styles from './styles';
 
 export default function HeaderProfile({ data }) {
   const url = API_BASE_URL + data.photo;
   return (
-    <View>
-      <View>
-        <Image source={{ uri: url }} />
-        <View>
-          <View>
-            <Text>RhuanM.R</Text>
+    <View style={styles.container}>
+      <View style={styles.containerInfo}>
+        <Image style={styles.profileImage} source={{ uri: url }} />
+        <View style={styles.containerData}>
+          <View style={styles.contentHeader}>
+            <Text style={styles.profileName}>RhuanM.R</Text>
             <TouchableOpacity>
               <Image source={Icon} />
             </TouchableOpacity>
           </View>
-          <View>
-            <View>
-              <Text>
+          <View style={styles.containerNumbers}>
+            <View style={styles.contentNumbers}>
+              <Text style={styles.contentName}>
                 Memories
               </Text>
-              <Text>
+              <Text style={styles.number}>
                 30
               </Text>
             </View>
-            <View>
-              <Text>
+            <View style={styles.contentNumbers}>
+              <Text style={styles.contentName}>
                 Friends
               </Text>
-              <Text>
+              <Text style={styles.number}>
                 50
               </Text>
             </View>
-            <View>
-              <Text>
+            <View style={styles.contentNumbers}>
+              <Text style={styles.contentName}>
                 Circles
               </Text>
-              <Text>
+              <Text style={styles.number}>
                 10
               </Text>
             </View>
           </View>
         </View>
       </View>
-      <View>
-        <Text>{data.bio}</Text>
+      <View style={styles.containerBio}>
+        <Text style={styles.bio}>{data.bio}</Text>
       </View>
     </View>
   );
