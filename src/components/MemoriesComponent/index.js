@@ -7,11 +7,17 @@ import MemoriesHeader from './components/MemoriesHeader';
 import ProfileIcon from './assets/ProfileIcon.png';
 import styles from './styles';
 import MemoriesContent from './components/MemoriesContent';
+import MemoriesHooks from './hooks';
 
-export default function MemoriesComponent({ date, title, data }) {
+export default function MemoriesComponent({
+  date, title, data, navigation,
+}) {
+  const {
+    handleClose,
+  } = MemoriesHooks({ navigation });
   return (
     <View style={styles.memorieContainer}>
-      <TouchableOpacity style={styles.closeButton}>
+      <TouchableOpacity style={styles.closeButton} onPress={handleClose}>
         <Text style={styles.closeSymbol}>X</Text>
       </TouchableOpacity>
       <FlatList
