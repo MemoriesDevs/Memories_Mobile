@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const ProfileHooks = () => {
-  const [contentType] = useState(['Memories', 'Friends', 'Circles']);
+  const [contentType] = useState(['Memories', 'Friends', 'Circles', 'Tags']);
   const [selectedType, setSelectedType] = useState(['Memories']);
 
   return {

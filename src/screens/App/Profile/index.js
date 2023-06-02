@@ -21,7 +21,10 @@ export default function Profile() {
   return (
     <BasicPage navigation={navigation} name="Profile">
       <View style={styles.container}>
-        <HeaderProfile data={data} />
+        <HeaderProfile
+          data={data}
+          setSelectedType={setSelectedType}
+        />
         <ContentProfile
           data={data}
           navigation={navigation}
